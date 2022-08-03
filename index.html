@@ -1,0 +1,600 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <!-- メタエリアここから -->
+    <meta charset="UTF-8">
+    <!--
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
+    -->
+    <meta name="viewport" content="width=device-width, user-scalable=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- メタエリアここまで -->
+    <!-- タイトルここから -->
+    <title>D-MADE | 歯科医院（診療所）開業専門のトータルサポート</title>
+    <!-- タイトルここまで -->
+
+    <!-- スタイルシート読み込み -->
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/print.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- JS読み込み -->
+    <!-- <script src="./js/jquery-1.11.2.min.js"></script> -->
+    <script src="./js/jquery.3.5.1.min.js"></script>
+    <script src="./js/setup.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/slideSetting.js"></script>
+    <script src="./js/jquery.matchHeight.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            //ハンバーガーメニューボタンがクリックされた時
+            $('.hamburger').on('click', function() {
+
+                //"is-open" classがついているかどうかを expanded に格納
+                const expanded = $(this).hasClass('is-open');
+                //ボタンテキストのDOMを$btnTxtに格納
+                const $btnTxt = $('.hamburger__txt');
+                //メニューのDOMを$gnavに格納
+                const $gnav = $('.gnav');
+
+                //もし expanded が falseだったら（メニューが非表示）
+                if (!expanded) {
+                    $(this).addClass('is-open'); //'is-open' classを追加
+                    $gnav.slideDown(); //メニューを表示
+                    //もし expanded が trueだったら（メニューが展開済）
+                } else {
+                    $(this).removeClass('is-open'); //'is-open' classを削除
+                    $gnav.slideUp(); //メニューを非表示
+                }
+            });
+        });
+
+        $(function() {
+            $('.ac-label').click(function() {
+                $(this).next('li').slideToggle();
+                $(this).find(".icon").toggleClass('open');
+            });
+        });
+
+    </script>
+
+    <!--[if lt IE 9]（編集不可領域）-->
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/selectivizr.js"></script>
+    <script src="./js/respond.js"></script>
+
+    <!-- text marker animation -->
+    <script type="text/javascript" src="./js/marker.ani.js"></script>
+
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <!-- image lazyload library -->
+    <script src="./js/lazysizes.min.js" async=""></script>
+
+    <!-- image fit library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+    <script>
+        objectFitImages();
+
+    </script>
+</head>
+
+<body>
+    <article id="wrapper">
+
+        <header>
+            <div class="flex_btw">
+                <h1>
+                    <p class="logo-txt sp_on">歯科医院（診療所）開業専門のトータルサポート</p>
+                    <svg id="hd_logo" data-name="footer_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50.88">
+                        <path class="cls-1" d="M0,50.88V0H10.79q6.29,0,9.54,3.43t3.25,9.72V37q0,7.14-3.46,10.54t-10,3.39Zm7.29-44V44h3.36c2,0,3.5-.51,4.36-1.54a7.47,7.47,0,0,0,1.28-4.82V13.15A7.73,7.73,0,0,0,15.08,8.5q-1.22-1.63-4.43-1.64Z" />
+                        <path class="cls-1" d="M33.72,31V23.68H55.23V31Z" />
+                        <path class="cls-1" d="M65.36,50.88V0h7l9.36,26.94h.15L91.16,0h7.07V50.88H90.94V19.94H90.8L83.58,41.81H79.94L72.79,19.94h-.14V50.88Z" />
+                        <path class="cls-1" d="M106.94,50.88,118.3,0h6.07l11.36,50.88h-7.29L126.3,40h-9.93l-2.15,10.93Zm18-17.79-3.57-18.44h-.14l-3.58,18.44Z" />
+                        <path class="cls-1" d="M144.44,50.88V0h10.79q6.28,0,9.54,3.43T168,13.15V37q0,7.14-3.47,10.54t-10,3.39Zm7.29-44V44h3.36c2,0,3.5-.51,4.36-1.54a7.47,7.47,0,0,0,1.28-4.82V13.15a7.73,7.73,0,0,0-1.21-4.65q-1.22-1.63-4.43-1.64Z" />
+                        <path class="cls-1" d="M178.28,50.88V0H200V6.86H185.56V21.8h12.58v6.86H185.56V43.59H200v7.29Z" /></svg>
+
+                    <p class="logo-txt pc_on">歯科医院（診療所）開業専門のトータルサポート</p>
+                </h1>
+
+                <span class="flex_btn">
+                    <button type="button" class="line_link flex-shrink-1">
+                        <img src="./images/icon_line.png" alt="LINEでのご相談" class="header_icon">
+                        <p class="pc_on">LINEでのご相談</p>
+                    </button>
+
+                    <button type="button" class="mail_link flex-shrink-1">
+                        <img src="./images/icon_mail.png" alt="メールでのご相談" class="header_icon">
+                        <p class="pc_on">メールでのご相談</p>
+                    </button>
+                    <button type="button" class="hamburger  flex-shrink-1" aria-controls="gnav">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__txt"></span>
+                    </button>
+                    <nav id="gnav" class="gnav">
+
+                        <ul class="gnav__list">
+                            <li class="gnav__item"><a href="#" class="gnav__link">私たちについて</a></li>
+                            <li class="gnav__item"><a href="#" class="gnav__link">開業までの流れ</a></li>
+                            <li class="gnav__item"><a href="#" class="gnav__link">開業事例</a></li>
+                            <li class="gnav__item"><a href="#" class="gnav__link">選ばれる理由</a></li>
+                            <li class="gnav__item"><a href="#" class="gnav__link">よくあるご質問</a></li>
+                            <li class="gnav__item"><a href="#" class="gnav__link">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </span>
+            </div>
+        </header>
+
+        <section class="mv">
+            <div class="mv_grid">
+                <p class="sns_area pc_on">
+                    <span class="f_wblue">
+                        <svg viewBox="0 0 512 512">
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" /></svg></span>
+                    <span class="f_wblue lh9"><svg viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" /></svg></span>
+                    <span class="text-combine t_wblue">SNS Share</span>
+                </p>
+                <p class="mv_area pc_on">
+                    <img src="./images/main.jpg" alt="D-MADE | 歯科医院（診療所）開業専門のトータルサポート" class="mv_img">
+                    <span class="mv_txt1">居心地のいい空間は、</span>
+                    <span class="mv_txt2">気持ちのいい開業から。</span>
+                </p>
+                <p class="mv_area sp_on">
+                    <img src="./images/main_sp.jpg" alt="D-MADE | 歯科医院（診療所）開業専門のトータルサポート" class="mv_img__sp">
+                    <span class="mv_txt1">居心地のいい空間は、</span>
+                    <span class="mv_txt2">気持ちのいい開業から。</span>
+                </p>
+            </div>
+        </section>
+
+
+        <main>
+            <section class="about_us">
+                <div class="lg_contain">
+                    <h3 class="section_title t_center">About us
+                        <div class="section_subtitle">私たちについて</div>
+                    </h3>
+                    <div class="wrap_center">
+                        <div class="txt01"> 歯科医院開業支援のご相談専門、</div>
+                        <div class="txt01">
+                            トータルサポートを行う「D-MADE」</div>
+                    </div>
+
+                    <div class="wrap_center">
+                        <div class="txt02 mt2 pc_on">独立・開業までに必要なノウハウ、情報、人材を</div>
+                        <div class="txt02 mb5  pc_on">ワンストップでご提案・ご紹介させていただくことで、スムーズな開業を実現します。</div>
+                        <div class="txt02 mt3 sp_on">独立・開業までに必要なノウハウ、情報、人材をワンストップでご提案・ご紹介させていただくことで、スムーズな開業を実現します。</div>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="flow">
+                <div class="lg_contain">
+                    <h3 class="section_title t_center">Flow<div class="section_subtitle">開業までの流れ</div>
+                    </h3>
+
+                    <div class="wrap_center">
+                        <div class="txt02">豊富な開業経験に基づいた独自のサポートを駆使し、独立・開業方法をご提案させていただきます。 </div>
+                        <div class="txt02 mb2">
+                            開業までに必要な多くの準備を、窓口を1本化することで歯科医師の先生方の労力とコストを最小限に抑えます。</div>
+                    </div>
+                    <ul class="cardList">
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div class="card-img"><img src="./images/flow_img01.png" alt=""></div>
+                                <div class="card__txt">開業カウンセリング</div>
+                                <div class="card__txt"> （基本構想）</div>
+                            </div>
+                        </li>
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div><img src="./images/flow_img02.png" alt=""></div>
+                                <div class="card__txt">物件探し</div>
+                            </div>
+                        </li>
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div><img src="./images/flow_img03.png" alt=""></div>
+                                <div class="card__txt">融資サポート
+                                </div>
+                                <div class="card__txt"> （資金調達）</div>
+                            </div>
+                        </li>
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div><img src="./images/flow_img04.png" alt=""></div>
+                                <div class="card__txt">設計・施工</div>
+                            </div>
+                        </li>
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div><img src="./images/flow_img05.png" alt=""></div>
+                                <div class="card__txt">ロゴ・販促物</div>
+                            </div>
+                        </li>
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div><img src="./images/flow_img06.png" alt=""></div>
+                                <div class="card__txt">各種業者紹介</div>
+                                <div class="card__txt"> （医療機器 等 購入）</div>
+                            </div>
+                        </li>
+
+                        <li class="cardList__item">
+                            <div class="wrap_center card_02">
+                                <div class="card__txt02">OPEN!</div>
+                            </div>
+                        </li>
+                        <li class="cardList__item">
+                            <div class="wrap_center card">
+                                <div><img src="./images/flow_img07.png" alt=""></div>
+                                <div class="card__txt">アフターフォロー</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="casestudy">
+                <div class="lg_contain">
+                    <h3 class="section_title t_center">Case Study<div class="section_subtitle">開業事例</div>
+                    </h3>
+
+
+                    <ul class="cardList2">
+                        <li class="cardList2__item grid__item01">
+                            <div class="card2">
+                                <div><img src="./images/casestudy_img01.jpg" alt=""></div>
+                                <div class="card__txt2">ホワイトをベースとした、清潔感のある開放的なエントランス。</div>
+                            </div>
+                        </li>
+
+                        <li class="cardList2__item grid__item02">
+                            <div class="card2">
+                                <div><img src="./images/casestudy_img02.jpg" alt=""></div>
+                                <div class="card__txt2">お客様はもちろん、医院のみなさまも居心地良く治療しやすい空間。</div>
+                            </div>
+                        </li>
+                        <li class="cardList2__item grid__item03">
+                            <div class="card2">
+                                <div><img src="./images/casestudy_img03.jpg" alt=""></div>
+                                <div class="card__txt2">ワクワクするキッズスペースで、ファミリー層の集客アップに。</div>
+                            </div>
+                        </li>
+                        <li class="cardList2__item grid__item04">
+                            <div class="card2">
+                                <div><img src="./images/casestudy_img04.png" alt=""></div>
+                                <div class="card__txt2">ロゴデザイン、名刺・リーフレットなどのデザインも。</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="reason">
+                <h3 class="section_title t_center">Reason
+                    <div class="section_subtitle">選ばれる理由</div>
+                </h3>
+                <div class="lg_contain">
+                    <ul class="cardList3">
+                        <li class="cardList3__item">
+                            <div class="wrap_center card__txt3">
+                                <span class="sp_on">開業時の負担を少しでも軽く</span><span class="sp_on">想いに応える、ベストな提案を。</span></div>
+                            <div class="card__txt3 pc_on">
+                                開業時の負担を少しでも軽く。
+                                <div class="card__txt3 pc_on">
+
+                                    想いに応える、ベストな提案を。</div>
+                            </div>
+                        </li>
+                        <li class="cardList3__item">
+                            <div class="card__txt3_2">
+                                <p class="txt02">歯科診療ユニット、X線装置などの医療機器、内装工事、物件の取得費や前家賃など、開業時には多くの費用がかかります。</p>
+                                <p class="mt3 txt02">私たちD-MADEは、<span class="t_wblue f_w500">一般的な成功報酬などの手数料をいただいておりません。</span></p>
+
+                                <p class="txt02 sp_on f_w500">設計や施工、ロゴ・印刷物についても当社のデザイナーが直接制作を担当するため、<span class="t_wblue f_w500">複数の会社に頼むよりもコストが下がり</span>ます。</p>
+                                <p class="txt02 pc_on">設計や施工、ロゴ・印刷物についても当社のデザイナーが</p>
+                                <p class="pc_on txt02">直接制作を担当するため、<span class="t_wblue f_w500">複数の会社に頼むよりもコストが下がり</span>ます。</p>
+
+                                <p class="txt02">テンプレート等を用いたものではなく、</p>
+                                <p class="txt02">お客様のイメージに合わせたオリジナルのデザインは、</p>
+                                <p class="txt02 pc_on">当社内にデザイン部門があるからこそ、</p>
+                                <span class="txt02 sp_on">当社内にデザイン部門があるからこそ、費用がかからず高クオリティな仕上がりに。</span>
+                                <p class="txt02 pc_on">費用がかからず高クオリティな仕上がりに。</p>
+                                <p class="mt3 txt02 pc_on">融資を受ける場合も、コンサル料・手数料等をいただかずに</p>
+                                <p class="txt02 pc_on">専門税理士をご紹介し、開業準備～開業後のサポートもさせていただきます。</p>
+                                <span class="mt3 txt02 sp_on">融資を受ける場合も、コンサル料・手数料等をいただかずに専門税理士をご紹介し、開業準備～開業後のサポートもさせていただきます。</span>
+                                <p class="txt02">まずはお気軽にご相談ください。</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="lg_contain">
+                    <h3 class="section_title t_center">FAQ<div class="section_subtitle">よくあるご質問</div>
+                    </h3>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>見積りや相談は有料ですか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>無料です。どのようなことでもお気軽にお問い合わせください。</p>
+
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>対象エリアはありますか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>設計施工は東京・神奈川・千葉・埼玉・茨城の関東圏が基本的には対象エリアとなります。 (一部地域を除く)</p>
+                            <p>名刺やチラシなどの広告類、イラストなどはメールや電話、オンラインお打合せのみで対応可能です。
+                                デザイン・設計図書のみの納品(施工・監理業務は別途)の条件であれば、対象エリアは全国になります。</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>開業時の資金面が不安で悩んでいます・・・</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>開業の実現には事業資金の調達と事業計画が必要不可欠です。
+                                継続的に積み重ねてきた実績に基づいた、融資に特化した税理士が全力で資金調達のサポートを行わせて頂きます。
+                                開業後も支払や返済に必要な収入、事業拡大などをアフターフォローさせていただくことで、安心して事業経営に専念できます。</p>
+                        </li>
+                    </ul>
+
+
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>開業場所について悩んでいます・・・</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>物件選びに必要な、視認性・利便性・集客力・家賃といった項目から、来患予測を行い、
+                                間違いない立地をアドバイスさせて頂きます。</p>
+                        </li>
+                    </ul>
+
+
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>自己資金が少ないのですが、開業は可能でしょうか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>テナントの規模にもよりますが、可能になります。また、居抜きテナントの改装なども得意としております。
+                                内装・機材を工夫することで賢く開業なども可能です。
+                                資金が足りない場合は融資サポー トに強い当社提携の税理士をご紹介いたします。 なお、税理士を紹介する場合は一般的に紹介手数料および成功報酬費用が発生致しますが、当社提携の税理士紹介の場合、手数料が無料になり、他社様と比べ非常にお得です。
+                                (一部、別途条件あり)</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>物件の内見（現地調査）には、お金が発生しますか？</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>無料です。良い物件が見つかりましたら、内見に同行させて頂き、設備容量的（物件スペック的）に
+                                物件が開業可能かをその場で判断可能です。</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>打ち合わせ場所はどこですか? また何回くらいありますか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>打ち合わせ場所は基本的に弊社事務所 ( 東京都品川区 ) にてお願いしておりますが、現在まだ働いていて自由に動けないなどといったご事情がございましたらご相談ください。 また打ち合わせ回数は規模や内容にもよりますが、だいたい４〜５回くらいが一般的です。
+                                (物件の内見を除く)</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>だいたいどのくらいでオープンできますか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>物件の申し込みを行って頂いてから、約２ヶ月〜３ヶ月ほどでお店が完成致します。
+                                融資の実行に大体 1~1.5 ヵ月を要します為、その間に内装の設計を行わせて頂きます。
+                                内装工事に約 1~1.5 ヵ月を頂いております。
+                                (内装工事は物件の規模により、工事期間が前後致します)</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>空間のデザインはどのように確認できますか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>図面から制作したパースと呼ばれる立体的な絵や、合成写真・スケッチなどでご提案いたします。また使用する素材をショールームや材料サンプルなどで実際に見ていただけますので、仕上がりのイメージをより実感できます。</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>設計施工の他に、看板やロゴもお願いできますか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>はい。企業や有名サロンを多数手掛けたデザイナーがクオリティの高いデザインをご提案いたします。看板やロゴ以 外にも、名刺やチラシなどの印刷物、オリジナルキャラクター、各種ポップ・ノベルティ・パッケージなど、ジャンルもテイストも様々に制作可能です。</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>内装設計を依頼しないと名刺やチラシなどの制作は頼めませんか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>いいえ、印刷物やロゴ、イラスト単体でのご依頼も歓迎しております。当社は内装デザイナーとグラフィックデザイ ナーが常に情報を共有しているため、新規オープンをお考えでしたら、より一貫性のあるデザインがご提案できますので、まとめてご依頼いただくのがおすすめです。</p>
+                        </li>
+                    </ul>
+                    <ul class="faq_block">
+                        <li class="ac-label">
+                            <p>引き渡し後のアフターフォローはありますか?</p>
+                            <div class="icon-wrap"><span class="icon"></span></div>
+                        </li>
+                        <li class="ac-content">
+                            <p>はい。お引き渡し後も経営、店舗のメンテナンス含めまして、引き続きサポートさせて頂きます。
+                                快適な店舗維持の為の簡単なメンテナンス方法や、その他アドバイスも行っております。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact">
+                <h3 class="section_title t_center">Contact<div class="section_subtitle">お問い合わせ</div>
+                </h3>
+                <div class="lg_contain">
+                    <div class="txt02 wrap_center pc_on">ご予約はお電話・WEBにて受け付けております。</div>
+                    <div class="txt02 wrap_center pc_on">ご不明点やお問い合わせに関しましては、お気軽にご連絡ください。</div>
+
+                    <div class="txt02 sp_on">ご予約はお電話・WEBにて受け付けております。</div>
+                    <div class="txt02 sp_on">ご不明点やお問い合わせに関しましては、お気軽にご連絡ください。</div>
+                </div>
+
+
+
+            </section>
+            <span class="flex_contact">
+                <button type="button" class="flex_contact__line flex-shrink-1">
+                    <img src="./images/icon_line.png" alt="LINEでのご相談"><span class="pc_on f_w700">LINEでのご相談はこちら</span>
+                    <p class="sp_on f_w600">LINEでの</p>
+                    <p class="sp_on f_w600">ご相談はこちら</p>
+                </button>
+
+                <button type="button" class="flex_contact__mail flex-shrink-1">
+                    <img src="./images/icon_mail.png" alt="メールでのご相談">
+                    <span class="pc_on f_w">メールでのお問い合わせ</span>
+                    <p class="sp_on f_w600">メールでの</p>
+                    <p class="sp_on f_w600">お問い合わせ</p>
+                </button>
+
+            </span>
+        </main>
+
+        <footer>
+
+            <div class="lg_contain">
+                <!--   
+<div class="ft_topgrid">
+
+<div class="lg_contain">
+<ul class="ft_menu flex_evenly">
+<li><a href="https://www.pro-bousai.jp/html/ordercontract.html" target="_blank">会社案内</a></li>
+<li><a href="https://www.pro-bousai.jp/html/page61.html" target="_blank">ご利用ガイド</a></li>
+<li><a href="https://www.pro-bousai.jp/c.htm" target="_blank">法人様専用ページ</a></li>
+<li><a href="https://www.pro-bousai.jp/koe.htm" target="_blank">お客様の声</a></li>
+<li><a href="https://www.pro-bousai.jp/html/page62.html" target="_blank">よくある質問</a></li>
+<li><a href="/c/contact/" target="_blank">お問い合わせ</a></li>
+</ul>
+</div>
+
+
+</div>-->
+
+
+                <div class="flex_footer">
+                    <div class="flex_footer__company　wrap_center">
+                        <p class="firm_label">歯科医院開業専門の
+                            <br class="sp_on">トータルサポート</p>
+                        <p>
+
+                            <svg id="footer_logo" data-name="footer_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50.88">
+                                <path class="cls-1" d="M0,50.88V0H10.79q6.29,0,9.54,3.43t3.25,9.72V37q0,7.14-3.46,10.54t-10,3.39Zm7.29-44V44h3.36c2,0,3.5-.51,4.36-1.54a7.47,7.47,0,0,0,1.28-4.82V13.15A7.73,7.73,0,0,0,15.08,8.5q-1.22-1.63-4.43-1.64Z" />
+                                <path class="cls-1" d="M33.72,31V23.68H55.23V31Z" />
+                                <path class="cls-1" d="M65.36,50.88V0h7l9.36,26.94h.15L91.16,0h7.07V50.88H90.94V19.94H90.8L83.58,41.81H79.94L72.79,19.94h-.14V50.88Z" />
+                                <path class="cls-1" d="M106.94,50.88,118.3,0h6.07l11.36,50.88h-7.29L126.3,40h-9.93l-2.15,10.93Zm18-17.79-3.57-18.44h-.14l-3.58,18.44Z" />
+                                <path class="cls-1" d="M144.44,50.88V0h10.79q6.28,0,9.54,3.43T168,13.15V37q0,7.14-3.47,10.54t-10,3.39Zm7.29-44V44h3.36c2,0,3.5-.51,4.36-1.54a7.47,7.47,0,0,0,1.28-4.82V13.15a7.73,7.73,0,0,0-1.21-4.65q-1.22-1.63-4.43-1.64Z" />
+                                <path class="cls-1" d="M178.28,50.88V0H200V6.86H185.56V21.8h12.58v6.86H185.56V43.59H200v7.29Z" /></svg></p>
+                    </div>
+                    <div class="flex_footer__address">
+                        〒140-0011 東京都品川区東大井5-19-3
+                        <p>Tel.03-6885-3770</p>
+                        <p>Mail.bmade-info@bmade-office.com</p>
+                    </div>
+                </div>
+                <div class="wrap_center mb5 pc_on">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6487.780478076866!2d139.735854!3d35.605774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a7c161f2147%3A0x5d485ad94dc8d5ed!2z44CSMTQwLTAwMTEg5p2x5Lqs6YO95ZOB5bed5Yy65p2x5aSn5LqV77yV5LiB55uu77yR77yZ4oiS77yT!5e0!3m2!1sja!2sjp!4v1658725889686!5m2!1sja!2sjp" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="wrap_center mb5 sp_on">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12975.560956153731!2d139.735854!3d35.605774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a7c161f2147%3A0x5d485ad94dc8d5ed!2z44CSMTQwLTAwMTEg5p2x5Lqs6YO95ZOB5bed5Yy65p2x5aSn5LqV77yV5LiB55uu77yR77yZ4oiS77yT!5e0!3m2!1sja!2sjp!4v1658736116361!5m2!1sja!2sjp" width="430" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- pageup -->
+
+
+
+            </div>
+
+        </footer>
+        <div class="wrap_center">
+            <p class="footer-company sp_on">運営元：株式会社 B-MADE</p>
+            <p class="footer-copyright sp_on">© companyname. All Right Reserved.</p>
+        </div>
+        <div class="pc_on flex-copyright">
+
+            <p class="footer-company">運営元：株式会社 B-MADE</p>
+            <p class="footer-copyright">© companyname. All Right Reserved.</p>
+        </div>
+    </article>
+    <p class="pagetop">
+        <a href="#wrapper"><img src="./images/btn_top.png" alt="top" class="btn_top">
+        </a>
+    </p>
+    <p class="bottom_contact sp_on">
+        <a href="#"><img src="./images/btn_contact_sp.png" alt="contact" class="btn_contact_sp">
+        </a>
+    </p>
+    <p class="side_contact pc_on">
+        <a href="#"><img src="./images/btn_contact_pc.png" alt="contact" class="btn_contact_pc">
+        </a>
+    </p>
+    <script>
+        $(document).ready(function() {
+            // ////////////////////////////
+            // video thumb
+            // ////////////////////////////
+            $('.video_thumb').on('click', function() {
+                var movie_thumb = $(this).attr("id");
+                $('.video_block').addClass('show');
+                console.log(movie_thumb);
+                $(this).fadeOut(1000);
+                $(this).parent().append('<iframe width="600" height="338" src="https://www.youtube.com/embed/' + movie_thumb + '?rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>')
+            });
+
+            // ////////////////////////////
+            // faq grid
+            // ////////////////////////////
+            $('.q_block').click(function() {
+                $(this).toggleClass('open');
+                if ($(this).hasClass("open")) {
+                    $(this).next(".a_block").slideDown();
+                } else {
+                    $(this).next(".a_block").slideUp();
+                }
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
